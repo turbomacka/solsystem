@@ -1,4 +1,7 @@
-// interactions.js
+// js/interactions.js
+
+// Importera Three.js
+import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js';
 
 export function setupInteractions(camera, renderer, objects) {
   const raycaster = new THREE.Raycaster();
@@ -46,8 +49,8 @@ export function setupInteractions(camera, renderer, objects) {
       case 'Solen':
         content = 'Solen är stjärnan i centrum av vårt solsystem. Den utgör cirka 99,86% av solsystemets massa.';
         break;
-      case 'Mercurius':
-        content = 'Mercurius är den innersta planeten i solsystemet och den minsta. Den har ingen atmosfär och dess yta är täckt av kratrar.';
+      case 'Merkurius':
+        content = 'Merkurius är den innersta planeten i solsystemet och den minsta. Den har ingen atmosfär och dess yta är täckt av kratrar.';
         break;
       case 'Venus':
         content = 'Venus är den andra planeten från solen och liknar jorden i storlek. Den har en tjock atmosfär som orsakar extrem växthuseffekt.';
@@ -62,7 +65,7 @@ export function setupInteractions(camera, renderer, objects) {
         content = 'Jupiter är den största planeten i solsystemet och är en gasjätte. Den har en stor röd fläck som är en enorm storm.';
         break;
       case 'Saturnus':
-        content = 'Saturnus är känd för sina ringar som består av is och sten. Den är den näst största planeten i solsystemet.';
+        content = 'Saturnus är känd för sina imponerande ringar som består av is och sten. Den är den näst största planeten i solsystemet.';
         break;
       case 'Uranus':
         content = 'Uranus är en isjätte och är unik för att den roterar på sin sida. Den har en blågrön färg på grund av metan i atmosfären.';
@@ -93,6 +96,12 @@ export function setupInteractions(camera, renderer, objects) {
         break;
       case 'Titan':
         content = 'Titan är Saturnus största måne och den näst största i solsystemet. Den har en tjock atmosfär och sjöar av flytande metan.';
+        break;
+      case 'Titania':
+        content = 'Titania är den största av Uranus månar. Den består av is och sten.';
+        break;
+      case 'Oberon':
+        content = 'Oberon är den näst största månen till Uranus och har en yta täckt av kratrar.';
         break;
       case 'Triton':
         content = 'Triton är Neptunus största måne och är unik för sin retrograda bana, vilket innebär att den kretsar i motsatt riktning mot Neptunus rotation.';
